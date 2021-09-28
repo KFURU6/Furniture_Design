@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset css */
+
+body{
+    color: #333;
+    font-size: 0.875rem;
+    width:100vw;
+}
+/* header */
+.header-wrapper{
+	width:80%;
+	height:80px;
+	display:flex;
+	justify-content:space-between;
+	padding:0 10%;
+	align-items:center;
+	/* position:relative; */
+	position:fixed;
+	background-color:white;
+	z-index:97;
+}
+.header-logo{
+	align-items:center;
+}
+.header-logo:hover{
+	opacity:0.7;
+}
+.header-logo img{
+	width:180px;
+	height:20px;
+}
+.hamburger-btn{
+	top:15px;
+	right:10%;
+	position:fixed;
+	height:50px;
+	width:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:100;
+}
+.hamburger-menu input[type="checkbox"]{
+	visibility:hidden;
+}
+.hamburger-btn span,
+.hamburger-btn span::before,
+.hamburger-btn span::after{
+	width:30px;
+	height:2px;
+	border-radius:4px;
+	display:block;
+	content:"";
+	background-color:white;
+	position:relative;
+	transition:all  0.5s;
+}
+.hamburger-menu span::before{
+	position:absolute;
+	top:-3px;
+	background-color:black;
+}
+.hamburger-menu span::after{
+	position:absolute;
+	top:3px;
+	background-color:black;
+}
+.header-list{
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0.9;
+	visibility:hidden;
+	z-index:99;
+}
+
+.header-list ul{
+	padding:35px 45px;
+}
+.header-list li{
+	padding-bottom:20px;
+}
+.header-list a{
+	text-decoration:none;
+	font-size:14px;
+	color:white;
+}
+#hamburger-icon:checked ~ .hamburger-bg{
+	background-color:#333333;
+	opacity:0.9;
+	display:block;
+	width:100vw;
+	height:100vw;
+	position:fixed;
+	top:0;
+	left:0;
+}
+#hamburger-icon:checked ~ .hamburger-btn span{
+	background-color:#333333;
+	opacity:0.7;
+	display:block;
+}
+#hamburger-icon:checked ~ .hamburger-btn span::before{
+	transform:rotate(45deg);
+	background-color:white;
+	transition:all 0.5s;
+	display:block;
+	top:0;
+}
+#hamburger-icon:checked ~ .hamburger-btn span::after{
+	transform:rotate(-45deg);
+	background-color:white;
+	transition:all 0.5s;
+	display:block;
+	top:0;
+}
+#hamburger-icon:checked ~ .header-list{
+	visibility:visible;
+}
+/* company-wrapper */
+.company-wrapper{
+	width:80%;
+	padding:0 10%;
+	padding-top:160px;
+}
+.company-title{
+	padding:15px 0;
+}
+.company-list li{
+	display:block;
+	height:70px;
+	width:600px;
+	display:flex;
+	justify-content:left;
+	border-bottom:1px solid grey;
+}
+.company-list p{
+	line-height:20px;
+}
+.text-l,
+.text-r{
+	width:250px;
+	/* align-items:center; */
+}
+.text-l p{
+	align-items:center;
+}
+.google-map{
+	width:60%;
+	height:300px;
+	margin-top:40px;
+}
+/* footer-wrapper */
+.footer-wrapper{
+	width:80%;
+	margin:auto;
+	margin-top:150px;
+	padding:30px 40px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.footer-left li{
+	float:left;
+	padding-right:20px;
+	font-size:12px;
+}
+.footer-left:hover{
+	opacity:0.7;
+}
+.footer-left a{
+	text-decoration:none;
+	color: #333333;
+}
+.footer-right p{
+	font-size:10px;
+}
