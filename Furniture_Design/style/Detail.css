@@ -167,6 +167,9 @@ body{
 	visibility:visible;
 }
 /* product-details */
+.product-contents{
+	height:auto;
+}
 .product-details{
 	width:80%;
 	padding:0 10%;
@@ -182,10 +185,14 @@ body{
 	display:flex;
 }
 .details-text{
+	width:400px;
 	padding-left:60px;
 }
 .details-text div{
 	padding-bottom:40px;
+}
+.h1{
+	height:240px;
 }
 .h1 p, .h2 p, .price p, .scm p{
 	line-height:20px;
