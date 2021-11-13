@@ -138,8 +138,8 @@ body{
 	background-color:#333333;
 	opacity:0.9;
 	display:block;
-	width:100vw;
-	height:100vw;
+	width:100%;
+	height:100%;
 	position:fixed;
 	top:0;
 	left:0;
@@ -167,13 +167,13 @@ body{
 	visibility:visible;
 }
 /* product-details */
-.product-contents{
-	height:auto;
-}
 .product-details{
 	width:80%;
 	padding:0 10%;
 	padding-top:160px;
+}
+.product-contents{
+	height:auto;
 }
 .details-title h1{
 	display:block;
@@ -194,7 +194,7 @@ body{
 .h1{
 	height:240px;
 }
-.h1 p, .h2 p, .price p, .scm p{
+.h1 p,  .price p, .scm p{
 	line-height:20px;
 }
 .details-image{
@@ -205,7 +205,6 @@ body{
 	height:100%;
 	width:100%;
 }
-
 .page-container{
 	text-align:center;
 	margin:50px 0;

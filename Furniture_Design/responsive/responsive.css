@@ -15,11 +15,31 @@
     .content{
         width:calc(90%/2)
     }
+    .product-contents{
+        display:block;
+    }
+    .details-image{
+        height:100%;
+        width:100%;
+    }
+    .details-text{
+        width:100%;
+        padding-top:20px;
+        padding-left:0px;
+    }
+    .price p,
+    .scm p{
+        text-align:right;
+    }
+    /* foooter */
     .footer-wrapper{
         display:run-in;
     }
     .footer-left,
     .footer-right{
         width:100%;
+    }
+    .footer-right p{
+        text-align:right;
     }
 }
